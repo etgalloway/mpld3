@@ -32,3 +32,4 @@ before_install:
 script:
   - nosetests mpld3
   - make test  # Javascript tests
+  - python visualize_tests.py --nolaunch
