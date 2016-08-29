@@ -38,5 +38,6 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 
 script:
+  - pytest --version
   - pytest mpld3
   - make test  # Javascript tests
