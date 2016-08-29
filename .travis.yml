@@ -38,6 +38,7 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 
 script:
+  - python -c "import sys; [print(repr(_)) for _ in sys.path]"
   - pytest mpld3/test_plots
   - pytest mpld3/tests
   - make test  # Javascript tests
